@@ -27,7 +27,7 @@ const MyApp = (props) => {
         <Component {...pageProps} />
       </ApolloProvider>
     )
-  }
+}
 
 // }
 
