@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { useState } from 'react'
-import { useQuery } from '@apollo/client';
+// import { useState } from 'react'
+// import { useQuery } from '@apollo/client';
 
 import Layout from '../Components/Layout'
 import '../styles/styles.css'
@@ -17,7 +17,7 @@ import LastPoint from '../Components/Homepage/LastPoint';
 
 
 
-const handleDragStart = (e) => e.preventDefault();
+// const handleDragStart = (e) => e.preventDefault();
 export default function Home() {
 
   return (

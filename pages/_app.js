@@ -15,7 +15,7 @@ const client = new ApolloClient({
 
 const MyApp = (props) => {
   const { Component, pageProps } = props
-  const [isValidCookie, setIsValidCookie] = useState(false);
+  // const [isValidCookie, setIsValidCookie] = useState(false);
   const vari = process.env.API_BASE;
 
   // if (props.cook == null) {
