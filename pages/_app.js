@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
-import AgeVerification from '../Components/AgeVerification'
+// import AgeVerification from '../Components/AgeVerification'
 import Headers from '../GraphQL/Headers';
 
 
@@ -31,28 +31,28 @@ const MyApp = (props) => {
 
 // }
 
-MyApp.getInitialProps = async (context) => {
-  const { ctx } = context;
+// MyApp.getInitialProps = async (context) => {
+//   const { ctx } = context;
 
-  const getCookie = (name, ctx) => {
-    var nameEQ = name + '=';
-    const cookies = ctx.req ? ctx.req.headers.cookie : document.cookie;
-    if (!cookies) {
-      return null;
-    }
-    var ca = cookies.split(';');
-    for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-      if (c.indexOf(nameEQ) == 0)
-        return c.substring(nameEQ.length, c.length);
-    }
-    return null;
-  };
-  const cookie = getCookie('age_verified', ctx);
-  return {
-    cook: cookie
-  };
-}
+//   const getCookie = (name, ctx) => {
+//     var nameEQ = name + '=';
+//     const cookies = ctx.req ? ctx.req.headers.cookie : document.cookie;
+//     if (!cookies) {
+//       return null;
+//     }
+//     var ca = cookies.split(';');
+//     for (var i = 0; i < ca.length; i++) {
+//       var c = ca[i];
+//       while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+//       if (c.indexOf(nameEQ) == 0)
+//         return c.substring(nameEQ.length, c.length);
+//     }
+//     return null;
+//   };
+//   const cookie = getCookie('age_verified', ctx);
+//   return {
+//     cook: cookie
+//   };
+// }
 
 export default MyApp
