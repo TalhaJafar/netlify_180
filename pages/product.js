@@ -16,7 +16,7 @@ const types = {
 };
 const product = (props) => {
     const router = useRouter();
-    console.log(router.query.sku,)
+    // console.log(router.query.sku,)
     let productType = router.query.type;
     // const { loading, error, data } = useQuery(GET_Configurable_PRODUCT_DETAIL, {
     //     variables: { sku: router.query.sku }
@@ -43,7 +43,7 @@ const product = (props) => {
         loadingData = loading;
     }
     if (gData) {
-        console.log(gData);
+        // console.log(gData);
     }
     return (
         <Layout>
